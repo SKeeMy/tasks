@@ -1,0 +1,125 @@
+body {
+	background-color: rgb(197, 197, 197);
+	display: flex;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+}
+
+.form {
+	margin-top: 20px;
+	width: 600px;
+	height: 560px;
+	background-color: white;
+	padding: 45px 56px;
+}
+.form__wrapper-items {
+	max-width: 485px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.form h1 {
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	color: #263238;
+	margin-bottom: 30px;
+}
+.form__wrapper-item {
+	margin-bottom: 26px;
+	border: 1px solid #263238;
+	border-radius: 4px;
+	padding: 13px 5px 13px 10px;
+	max-width: 230px;
+}
+.form__container {
+	position: relative;
+}
+.form__container label {
+	font-weight: 500;
+	background-color: white;
+	position: absolute;
+	top: -8px;
+	left: 8px;
+	font-size: 12px;
+	padding: 0 5px;
+	cursor: default;
+	transition: ease-in-out 0.2s;
+}
+.form__container input:focus:required:valid {
+	border: 2px solid #1bb55c;
+}
+.form__container input:focus:required:invalid {
+	border: 2px solid #9e000d;
+}
+.form__container input:focus:required:valid ~ label {
+	color: #1bb55c;
+}
+.form__container input:focus:required:invalid ~ label {
+	color: #9e000d;
+}
+/* .form__container input:focus {
+	border: 2px solid #1bb55c;
+}
+.form__container input:focus:invalid {
+	border: 2px solid #9e000d;
+} */
+
+.mail input:focus:invalid {
+	border: 2px solid #9e000d;
+}
+.mail input:focus:invalid ~ label {
+	color: #9e000d;
+}
+.mail input:focus:valid ~ label {
+	color: #1bb55c;
+}
+.mail input:focus:valid {
+	border: 2px solid #1bb55c;
+}
+.form__wrapper-items textarea {
+	resize: none;
+	min-width: 100%;
+	border: 1px solid #263238;
+	border-radius: 4px;
+	padding: 13px 5px 13px 10px;
+	max-height: 125px;
+	outline: none;
+	transition: ease-in-out 0.2s;
+}
+.form__wrapper-items .message {
+	min-width: 100%;
+}
+.form__wrapper-items .message textarea:focus {
+	border-color: #1bb55c;
+}
+.form__wrapper-items .message textarea:focus ~ label {
+	color: #1bb55c;
+}
+.form__wrapper-agreement {
+	margin: 25px 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.form__wrapper-agreement-link {
+	color: #263238;
+	text-decoration: underline;
+}
+.form__wrapper-submit {
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+}
+.form__wrapper-submit input {
+	color: white;
+	background-color: #1bb55c;
+	padding: 14px 0;
+	width: 205px;
+	border-radius: 4px;
+	transition: ease-in-out 0.15s;
+	font-weight: 500;
+}
+.form__wrapper-submit input:hover {
+	transform: scale(0.99);
+}
