@@ -1,0 +1,26 @@
+.container {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	align-items: center;
+	margin: 10px 0;
+	font-size: 1.2rem;
+	gap: 5px;
+	.pagination {
+		border: 1px solid rgb(77, 77, 77);
+		padding: 8px 15px;
+		cursor: pointer;
+		border-radius: 3px;
+		font-weight: 400;
+		transition: ease-in-out 0.2s;
+		&:hover {
+			background-color: rgb(73, 73, 73);
+			color: rgb(104, 255, 222);
+		}
+	}
+	.active {
+		text-shadow: 0 0 5px #33ffd3, 0 0 10px #27ffed, 0 0 15px #30fad8,
+			0 0 30px #49ff18, 0 0 55px #49ff18,
+			-24px -13px 11px rgba(16, 206, 59, 0.03);
+	}
+}

@@ -1,0 +1,14 @@
+.form {
+	margin-top: 10px;
+	form {
+		display: flex;
+		justify-content: center;
+	}
+	input {
+		width: 90%;
+		padding: 10px 15px;
+		border: none;
+		border-radius: 8px;
+		font-size: 13px;
+	}
+}
